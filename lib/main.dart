@@ -6,7 +6,8 @@ void main() {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.pink[300],
-          title: const Text("Roll Dice"),
+          title: const Text("Roll Dice",
+              style: TextStyle(fontWeight: FontWeight.bold)),
         ),
         body: Container(
           decoration: const BoxDecoration(
@@ -15,10 +16,19 @@ void main() {
                 Color.fromARGB(255, 255, 133, 174),
                 Colors.white,
               ],
+              begin: Alignment.bottomRight,
+              end: Alignment.topLeft,
             ),
           ),
           child: const Center(
-            child: Text("Hello World!"),
+            child: Text(
+              "Hello World!",
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+              ),
+            ),
           ),
         ),
       ),
