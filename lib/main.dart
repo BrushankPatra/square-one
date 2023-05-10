@@ -9,13 +9,14 @@ void main() {
           title: const Text("Roll Dice",
               style: TextStyle(fontWeight: FontWeight.bold)),
         ),
-        body: GradientContainer(),
+        body: const GradientContainer(),
       ),
     ),
   );
 }
 
 class GradientContainer extends StatelessWidget {
+  const GradientContainer({super.key});
   @override
   Widget build(context) {
     return Container(
