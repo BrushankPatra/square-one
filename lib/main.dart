@@ -10,7 +10,10 @@ void main() {
           title: const Text("Roll Dice",
               style: TextStyle(fontWeight: FontWeight.bold)),
         ),
-        body: const GradientContainer(),
+        body: const GradientContainer(colors: [
+          Color.fromARGB(255, 255, 133, 174),
+          Colors.white,
+        ]),
       ),
     ),
   );
