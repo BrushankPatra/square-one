@@ -9,29 +9,36 @@ void main() {
           title: const Text("Roll Dice",
               style: TextStyle(fontWeight: FontWeight.bold)),
         ),
-        body: Container(
-          decoration: const BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Color.fromARGB(255, 255, 133, 174),
-                Colors.white,
-              ],
-              begin: Alignment.bottomRight,
-              end: Alignment.topLeft,
-            ),
-          ),
-          child: const Center(
-            child: Text(
-              "Hello World!",
-              style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-                fontSize: 20,
-              ),
-            ),
-          ),
-        ),
+        body: GradientContainer(),
       ),
     ),
   );
+}
+
+class GradientContainer extends StatelessWidget {
+  @override
+  Widget build(context) {
+    return Container(
+      decoration: const BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            Color.fromARGB(255, 255, 133, 174),
+            Colors.white,
+          ],
+          begin: Alignment.bottomRight,
+          end: Alignment.topLeft,
+        ),
+      ),
+      child: const Center(
+        child: Text(
+          "Hello World!",
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+            fontSize: 22,
+          ),
+        ),
+      ),
+    );
+  }
 }
