@@ -6,13 +6,13 @@ void main() {
     MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.pink[300],
+          backgroundColor: Colors.grey[850],
           title: const Text("Roll Dice",
               style: TextStyle(fontWeight: FontWeight.bold)),
         ),
         body: const GradientContainer(colors: [
-          Color.fromARGB(255, 255, 133, 174),
-          Colors.white,
+          Colors.black,
+          Colors.grey,
         ]),
       ),
     ),
